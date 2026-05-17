@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelX | Redefine Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">
+                <i data-lucide="plane" class="brand-icon"></i>
+                TRAVEL<span>X</span>
+            </div>
+            <div class="nav-links">
+                <a href="#destinations">Destinations</a>
+                <a href="#features">Features</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <button class="btn-nav">Book Now</button>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-links">
+                <a href="#destinations">Destinations</a>
+                <a href="#features">Features</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <button class="btn-nav">Book Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container reveal">
+            <span class="hero-tag">EXPLORE THE UNSEEN</span>
+            <h1>REDEFINE<br><span class="text-gradient">ADVENTURE</span></h1>
+            <p>Experience travel in a new dimension. From deep orbital views to hidden terrestrial gems, TravelX brings the future of exploration to your doorstep.</p>
+            <div class="hero-btns">
+                <button class="btn-primary">Start Journey <i data-lucide="arrow-right"></i></button>
+                <button class="btn-outline">Watch Film</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-item glass-dark reveal">
+                <div class="stat-number text-gradient" data-target="10" data-suffix="k+">0</div>
+                <div class="stat-label">Happy Travelers</div>
+            </div>
+            <div class="stat-item glass-dark reveal" style="transition-delay: 0.1s;">
+                <div class="stat-number text-gradient" data-target="500" data-suffix="+">0</div>
+                <div class="stat-label">Destinations</div>
+            </div>
+            <div class="stat-item glass-dark reveal" style="transition-delay: 0.2s;">
+                <div class="stat-number text-gradient" data-target="50" data-suffix="+">0</div>
+                <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-item glass-dark reveal" style="transition-delay: 0.3s;">
+                <div class="stat-number text-gradient" data-target="24" data-suffix="/7">0</div>
+                <div class="stat-label">Support</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>Engineering the <span class="text-gradient">Unknown</span></h2>
+                <p>Innovative technology for the modern pioneer.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card glass reveal">
+                    <div class="feature-icon"><i data-lucide="dollar-sign"></i></div>
+                    <h3>Affordable Luxuries</h3>
+                    <p>Experience premium travel without the premium price tag. We bridge the gap between luxury and accessibility.</p>
+                </div>
+                <div class="feature-card glass reveal" style="transition-delay: 0.1s;">
+                    <div class="feature-icon"><i data-lucide="zap"></i></div>
+                    <h3>Instant Booking</h3>
+                    <p>Quantum-speed processing ensures your journey is locked in the moment you decide to explore.</p>
+                </div>
+                <div class="feature-card glass reveal" style="transition-delay: 0.2s;">
+                    <div class="feature-icon"><i data-lucide="shield"></i></div>
+                    <h3>Safety Matrix</h3>
+                    <p>Our proprietary safety protocols and 24/7 hyper-monitoring keep you secure across any terrain.</p>
+                </div>
+                <div class="feature-card glass reveal" style="transition-delay: 0.3s;">
+                    <div class="feature-icon"><i data-lucide="globe"></i></div>
+                    <h3>Global Domains</h3>
+                    <p>Access exclusive locations previously restricted to private entities. The world is truly your playground.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>Trending <span class="text-gradient">Portals</span></h2>
+                <p>Curated locations with atmospheric excellence.</p>
+            </div>
+            <div class="dest-grid">
+                <div class="dest-card reveal">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&q=80&w=800" alt="Tokyo">
+                    <div class="dest-overlay">
+                        <div class="dest-tag glass">Cyberpunk</div>
+                        <div class="dest-info">
+                            <h3>Neon Tokyo</h3>
+                            <div class="dest-meta">
+                                <span>Starting from $1,299</span>
+                                <i data-lucide="heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dest-card reveal" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&q=80&w=800" alt="Santorini">
+                    <div class="dest-overlay">
+                        <div class="dest-tag glass">Coastal</div>
+                        <div class="dest-info">
+                            <h3>Santorini Blue</h3>
+                            <div class="dest-meta">
+                                <span>Starting from $2,499</span>
+                                <i data-lucide="heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dest-card reveal" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1476610182048-b716b801861e?auto=format&fit=crop&q=80&w=800" alt="Iceland">
+                    <div class="dest-overlay">
+                        <div class="dest-tag glass">Nature</div>
+                        <div class="dest-info">
+                            <h3>Arctic Aurora</h3>
+                            <div class="dest-meta">
+                                <span>Starting from $3,199</span>
+                                <i data-lucide="heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>Voices from <br>the <span class="text-gradient">Frontier</span></h2>
+            </div>
+            <div class="testimonial-carousel">
+                <div class="testimonial-item glass-dark reveal">
+                    <div class="quote-icon"><i data-lucide="quote"></i></div>
+                    <p>"TravelX didn't just give me a vacation; they gave me a new perspective on reality. The coordination was flawless."</p>
+                    <div class="tester-info">
+                        <img src="https://i.pravatar.cc/150?u=sarah" alt="Sarah">
+                        <div>
+                            <h4>Sarah Jenkins</h4>
+                            <span>Quantum Architect</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>The <span class="text-gradient">TravelX</span> Archive</h2>
+                <p>Scouted moments from elite missions.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item span-2 row-2 reveal"><img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&q=80" alt=""></div>
+                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?auto=format&fit=crop&q=80" alt=""></div>
+                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&q=80" alt=""></div>
+                <div class="gallery-item row-2 reveal"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80" alt=""></div>
+                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80" alt=""></div>
+                <div class="gallery-item span-2 reveal"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-layout">
+            <div class="contact-info reveal">
+                <h2>Initiate <br><span class="text-gradient">Contact</span></h2>
+                <p>Ready to transcend the ordinary? Visit our ground station or launch a protocol below.</p>
+                <div style="margin-top: 3rem;">
+                    <p style="margin-bottom: 1rem;"><i data-lucide="map-pin" style="margin-right: 10px;"></i> 77 Venture Blvd, CA</p>
+                    <p style="margin-bottom: 1rem;"><i data-lucide="mail" style="margin-right: 10px;"></i> hello@travelx.future</p>
+                    <p><i data-lucide="phone" style="margin-right: 10px;"></i> +1 (888) FUTURE-X</p>
+                </div>
+            </div>
+            <div class="contact-form glass-dark reveal">
+                <form onsubmit="return false">
+                    <div class="form-group">
+                        <label>Identity</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Neural Mail</label>
+                        <input type="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Encryption Message</label>
+                        <textarea rows="4" placeholder="How can we help you explore?"></textarea>
+                    </div>
+                    <button class="btn-submit">Launch Protocol</button>
+                </form>
+            </div>
+        </div>
+        <footer class="container" style="margin-top: 5rem; text-align: center; color: var(--text-dim); font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem;">
+            <p>© 2026 TravelX Exploration Inc. All dimensions reserved.</p>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
