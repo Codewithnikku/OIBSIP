@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Temperature Converter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- LEFT -->
+
+      <div class="left">
+        <h1 class="title">Enter Temperature</h1>
+
+        <div class="field">
+          <label>Degree</label>
+
+          <div class="input-group">
+            <input type="number" id="degree" placeholder="0" />
+
+            <select class="small-select" id="fromUnit">
+              <option value="C">°C</option>
+              <option value="F">°F</option>
+              <option value="K">K</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Convert In</label>
+
+          <select class="big-select" id="toUnit">
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="C">Celsius (°C)</option>
+            <option value="K">Kelvin (K)</option>
+          </select>
+        </div>
+
+        <button onclick="convertTemp()">Convert →</button>
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="right">
+        <div class="result" id="result">32</div>
+
+        <div class="unit" id="unit">°F</div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
