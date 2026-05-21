@@ -1,0 +1,96 @@
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Space+Grotesk:wght@400;500;600&display=swap');
+  .calc-wrap { display:flex; justify-content:center; padding:2rem 0; }
+  .calc {
+    background:#0f0f12;
+    border-radius:24px;
+    border:1px solid #2a2a32;
+    padding:1.5rem;
+    width:320px;
+    box-shadow:0 0 0 1px #1a1a22 inset;
+    font-family:'Space Grotesk',sans-serif;
+  }
+  .display {
+    background:#07070a;
+    border-radius:14px;
+    border:1px solid #1e1e28;
+    padding:1rem 1.25rem;
+    margin-bottom:1.25rem;
+    min-height:88px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+  .expr {
+    font-family:'JetBrains Mono',monospace;
+    font-size:13px;
+    color:#4a4a6a;
+    min-height:18px;
+    word-break:break-all;
+    letter-spacing:0.02em;
+  }
+  .result {
+    font-family:'JetBrains Mono',monospace;
+    font-size:32px;
+    font-weight:600;
+    color:#e8e8f8;
+    text-align:right;
+    letter-spacing:-0.02em;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  .grid {
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:8px;
+  }
+  .btn {
+    aspect-ratio:1;
+    border:none;
+    border-radius:12px;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:transform 0.08s, background 0.1s;
+    display:flex; align-items:center; justify-content:center;
+    user-select:none;
+  }
+  .btn:active { transform:scale(0.92); }
+  .btn-num {
+    background:#1c1c26;
+    color:#c8c8e8;
+    border:1px solid #252530;
+  }
+  .btn-num:hover { background:#242433; }
+  .btn-op {
+    background:#1a1a2e;
+    color:#8888cc;
+    border:1px solid #252540;
+  }
+  .btn-op:hover { background:#22223a; }
+  .btn-util {
+    background:#141420;
+    color:#555580;
+    border:1px solid #1e1e30;
+    font-size:13px;
+  }
+  .btn-util:hover { background:#1a1a2a; }
+  .btn-enter {
+    background:#3a3a9a;
+    color:#d0d0ff;
+    border:1px solid #4a4aaa;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:0.08em;
+    grid-column:span 2;
+    aspect-ratio:auto;
+    height:52px;
+    border-radius:14px;
+  }
+  .btn-enter:hover { background:#4444aa; }
+  .btn-enter:active { transform:scale(0.97); }
+  .btn-clear { color:#cc5555 !important; }
+  .btn-del { color:#9988cc !important; }
+  .btn-sqrt { color:#55aacc !important; }
+  .bottom-row { display:grid; grid-template-columns:repeat(3,1fr) 2fr; gap:8px; margin-top:0; }
