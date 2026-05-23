@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushant Singh Rajput — A Star Beyond Stars</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- PAGE LOADER -->
+    <div id="page-loader">
+      <div class="loader-name">Sushant Singh Rajput</div>
+      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    </div>
+    <!-- NAV -->
+    <nav id="main-nav">
+      <a class="nav-brand" href="#">SSR</a>
+      <ul class="nav-links">
+        <li><a href="#portrait">Story</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#timeline">Journey</a></li>
+        <li><a href="#films">Films</a></li>
+        <li><a href="#legacy">Legacy</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-stars"></div>
+      <div class="particles" id="particles"></div>
+      <div class="hero-line"></div>
+      <p class="hero-years">January 21, 1986 &nbsp;—&nbsp; June 14, 2020</p>
+      <h1 class="hero-name">Sushant<em>Singh Rajput</em></h1>
+      <p class="hero-tagline">Actor &nbsp;·&nbsp; Dreamer &nbsp;·&nbsp; Star</p>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section id="quote">
+      <div class="quote-inner">
+        <p class="quote-text reveal">
+          I don't want to be a product of my environment. I want my environment
+          to be a product of me.
+        </p>
+        <span class="quote-attr reveal rd2">— Sushant Singh Rajput</span>
+      </div>
+    </section>
+
+    <!-- PORTRAIT + BIO -->
+    <section id="portrait">
+      <div class="portrait-img reveal from-left"></div>
+      <div class="portrait-text">
+        <div class="section-label reveal rd1">Biography</div>
+        <h2 class="reveal rd2">A Boy Who<br />Touched the Stars</h2>
+        <p class="reveal rd3">
+          Born in Patna, Bihar, Sushant Singh Rajput defied every expectation.
+          An engineering dropout who became one of Bollywood's most luminous
+          talents, he carried within him an extraordinary curiosity — about
+          science, philosophy, space, and the human condition.
+        </p>
+        <br />
+        <p class="reveal rd4">
+          From the national dance reality circuit to gracing millions of
+          television screens, to breathing life into MS Dhoni — India's greatest
+          cricket captain — Sushant turned every role into a revelation. His
+          performances were never merely acted; they were lived.
+        </p>
+        <br />
+        <p class="reveal rd5">
+          He read voraciously, gazing at telescopes as often as scripts. He
+          dreamed of buying land on the moon. He was, in every sense, a man who
+          reached for the cosmos — and caught it.
+        </p>
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section id="gallery">
+      <div class="section-header">
+        <div
+          class="section-label reveal"
+          style="justify-content: center; gap: 1rem"
+        >
+          <span
+            style="
+              display: block;
+              width: 30px;
+              height: 1px;
+              background: var(--gold);
+            "
+          ></span>
+          Photo Gallery
+          <span
+            style="
+              display: block;
+              width: 30px;
+              height: 1px;
+              background: var(--gold);
+            "
+          ></span>
+        </div>
+        <h2 class="reveal rd2">Moments Frozen in Time</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Row 1: large left + tall right -->
+        <div class="g-item g-span-2c g-span-2r reveal scale-in rd1">
+          <div class="g-overlay"></div>
+          <img
+            src="./Images/ssr_1.avif"
+            alt="Sushant Singh Rajput at IIFA Awards 2019" id="moments""
+            loading="lazy"
+            onerror="
+              this.parentElement.classList.add('loaded');
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div
+            class="film-bg-text"
+            style="
+              display: none;
+              color: rgba(201, 169, 110, 0.3);
+              font-size: 1rem;
+            "
+          >
+            SSR
+          </div>
+          <div class="g-caption">
+            <strong>At the IIFA Awards</strong><span>Mumbai · 2019</span>
+          </div>
+        </div>
+
+        <div class="g-item reveal scale-in rd2">
+          <div class="g-overlay"></div>
+          <img
+            src="./Images/ssr_2.jpg"
+            alt="Sushant at IIFA Rocks 2019"
+            loading="lazy"
+            onerror="
+              this.parentElement.classList.add('loaded');
+              this.style.display = 'none';
+            "
+          />
+          <div class="g-caption">
+            <strong>IIFA Rocks</strong><span>2019</span>
+          </div>
+        </div>
+
+        <div class="g-item reveal scale-in rd3">
+          <div class="g-overlay"></div>
+          <img
+            src="./Images/ssr_3.jpg"
+            alt="Sushant Singh Rajput IIFA cropped"
+            loading="lazy"
+            onerror="
+              this.parentElement.classList.add('loaded');
+              this.style.display = 'none';
+            "
+          />
+          <div class="g-caption">
+            <strong>IIFA Awards</strong><span>Closeup · 2019</span>
+          </div>
+        </div>
+
+        <!-- Row 2 continues with tall on right -->
+        <div class="g-item reveal scale-in rd2">
+          <div class="g-overlay"></div>
+          <img
+            src="./Images/ssr_4.jpg"
+            alt="Sushant at Kedarnath Press Meet"
+            loading="lazy"
+            onerror="
+              this.parentElement.classList.add('loaded');
+              this.style.display = 'none';
+            "
+          />
+          <div class="g-caption">
+            <strong>Kedarnath Press Meet</strong><span>2018</span>
+          </div>
+        </div>
+
+        <div class="g-item reveal scale-in rd3">
+          <div class="g-overlay"></div>
+          <img
+            src="./Images/ssr_5.jpg"
+            alt="Sushant during Sonchiriya promotions"
+            loading="lazy"
+            onerror="
+              this.parentElement.classList.add('loaded');
+              this.style.display = 'none';
+            "
+          />
+          <div class="g-caption">
+            <strong>Sonchiriya Promotions</strong><span>2019</span>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="g-item reveal scale-in rd1">
+          <div class="g-overlay"></div>
+          <img
+            src="./Images/ssr_6.avif"
+            alt="Chhichhore Trailer Launch"
+            loading="lazy"
+            onerror="
+              this.parentElement.classList.add('loaded');
+              this.style.display = 'none';
+            "
+          />
+          <div class="g-caption">
+            <strong>Chhichhore Trailer Launch</strong><span>2019</span>
+          </div>
+        </div>
+
+        <div class="g-item g-span-2c reveal scale-in rd2">
+          <div class="g-overlay"></div>
+          <img
+            src="./Images/ssr_7.jpg"
+            alt="Chhichhore Press Conference"
+            loading="lazy"
+            onerror="
+              this.parentElement.classList.add('loaded');
+              this.style.display = 'none';
+            "
+          />
+          <div class="g-caption">
+            <strong>Chhichhore Press Conference</strong
+            ><span>September 2019</span>
+          </div>
+        </div>
+
+        <div class="g-item reveal scale-in rd3">
+          <div class="g-overlay"></div>
+          <img
+            src="./Images/ssr_8.jpg"
+            alt="Filmfare Awards"
+            loading="lazy"
+            onerror="
+              this.parentElement.classList.add('loaded');
+              this.style.display = 'none';
+            "
+          />
+          <div class="g-caption">
+            <strong>Filmfare Awards</strong><span>Tribute</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline">
+      <div class="section-header">
+        <div
+          class="section-label reveal"
+          style="justify-content: center; gap: 1rem"
+        >
+          <span
+            style="
+              display: block;
+              width: 30px;
+              height: 1px;
+              background: var(--gold);
+            "
+          ></span
+          >His Journey<span
+            style="
+              display: block;
+              width: 30px;
+              height: 1px;
+              background: var(--gold);
+            "
+          ></span>
+        </div>
+        <h2 class="reveal rd1">A Life Illuminated</h2>
+      </div>
+      <div class="timeline-track" id="tlTrack">
+        <div class="tl-item">
+          <div class="tl-content">
+            <h3>Born in Patna</h3>
+            <p>
+              January 21st — a boy arrives whose light would illuminate millions
+              of screens across India.
+            </p>
+          </div>
+          <div class="tl-year">1986</div>
+          <div class="tl-empty"></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-empty"></div>
+          <div class="tl-year">2006</div>
+          <div class="tl-content">
+            <h3>Theatre & Dance</h3>
+            <p>
+              Drops engineering to pursue dance. Joins Shiamak Davar's troupe
+              and Barry John's theatre group, honing raw talent into craft.
+            </p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-content">
+            <h3>Television Breakthrough</h3>
+            <p>
+              Stars in <em>Pavitra Rishta</em> as Manav Deshmukh, winning hearts
+              across India and becoming a household name overnight.
+            </p>
+          </div>
+          <div class="tl-year">2009</div>
+          <div class="tl-empty"></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-empty"></div>
+          <div class="tl-year">2013</div>
+          <div class="tl-content">
+            <h3>Bollywood Debut</h3>
+            <p>
+              Kai Po Che! — an electrifying debut. Critics and audiences alike
+              recognized an extraordinary talent had arrived.
+            </p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-content">
+            <h3>MS Dhoni: The Untold Story</h3>
+            <p>
+              A career-defining performance as Mahendra Singh Dhoni. The film
+              became a cultural phenomenon, grossing over ₹200 crore.
+            </p>
+          </div>
+          <div class="tl-year">2016</div>
+          <div class="tl-empty"></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-empty"></div>
+          <div class="tl-year">2019</div>
+          <div class="tl-content">
+            <h3>Chhichhore</h3>
+            <p>
+              A National Award winning film. A poignant meditation on
+              friendship, failure, and finding the courage to rise again.
+            </p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-content">
+            <h3>Dil Bechara</h3>
+            <p>
+              His final film — released posthumously — became the most-liked
+              Indian film trailer on YouTube. A last, brilliant gift.
+            </p>
+          </div>
+          <div class="tl-year">2020</div>
+          <div class="tl-empty"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILMS -->
+    <section id="films">
+      <div class="section-header">
+        <div
+          class="section-label reveal"
+          style="justify-content: center; gap: 1rem"
+        >
+          <span
+            style="
+              display: block;
+              width: 30px;
+              height: 1px;
+              background: var(--gold);
+            "
+          ></span
+          >Filmography<span
+            style="
+              display: block;
+              width: 30px;
+              height: 1px;
+              background: var(--gold);
+            "
+          ></span>
+        </div>
+        <h2 class="reveal rd1">Roles That Defined a Generation</h2>
+      </div>
+      <div class="films-grid">
+        <div class="film-card reveal scale-in rd1">
+          <div class="film-bg">
+            <img
+              src="./Images/f_1.jpg"
+              alt="Kai Po Che"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="film-bg-text">Kai Po Che</div>
+          </div>
+          <div class="film-year-badge">2013</div>
+          <div class="film-info">
+            <h3>Kai Po Che!</h3>
+            <p>Abhishek Kapoor</p>
+          </div>
+        </div>
+        <div class="film-card reveal scale-in rd2">
+          <div class="film-bg">
+            <img
+              src="./Images//f_2.jpg"
+              alt="Shuddh Desi Romance"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="film-bg-text">Shuddh Desi Romance</div>
+          </div>
+          <div class="film-year-badge">2013</div>
+          <div class="film-info">
+            <h3>Shuddh Desi Romance</h3>
+            <p>Maneesh Sharma</p>
+          </div>
+        </div>
+        <div class="film-card reveal scale-in rd3">
+          <div class="film-bg">
+            <img
+              src="./Images/f_3.jpg"
+              alt="Detective Byomkesh Bakshy"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="film-bg-text">Byomkesh Bakshy</div>
+          </div>
+          <div class="film-year-badge">2015</div>
+          <div class="film-info">
+            <h3>Detective Byomkesh Bakshy!</h3>
+            <p>Dibakar Banerjee</p>
+          </div>
+        </div>
+        <div class="film-card reveal scale-in rd4">
+          <div class="film-bg">
+            <img
+              src="./Images/f_4.jpg"
+              alt="MS Dhoni"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="film-bg-text">MS Dhoni</div>
+          </div>
+          <div class="film-year-badge">2016</div>
+          <div class="film-info">
+            <h3>MS Dhoni</h3>
+            <p>Neeraj Pandey</p>
+          </div>
+        </div>
+        <div class="film-card reveal scale-in rd1">
+          <div class="film-bg">
+            <img
+              src="./Images/f_5.jpg"
+              alt="Kedarnath"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="film-bg-text">Kedarnath</div>
+          </div>
+          <div class="film-year-badge">2018</div>
+          <div class="film-info">
+            <h3>Kedarnath</h3>
+            <p>Abhishek Kapoor</p>
+          </div>
+        </div>
+        <div class="film-card reveal scale-in rd2">
+          <div class="film-bg">
+            <img
+              src="./Images/f_6.jpg"
+              alt="Sonchiriya"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="film-bg-text">Sonchiriya</div>
+          </div>
+          <div class="film-year-badge">2019</div>
+          <div class="film-info">
+            <h3>Sonchiriya</h3>
+            <p>Abhishek Chaubey</p>
+          </div>
+        </div>
+        <div class="film-card reveal scale-in rd3">
+          <div class="film-bg">
+            <img
+              src="./Images/f_7.jpg"
+              alt="Chhichhore"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="film-bg-text">Chhichhore</div>
+          </div>
+          <div class="film-year-badge">2019</div>
+          <div class="film-info">
+            <h3>Chhichhore</h3>
+            <p>Nitesh Tiwari</p>
+          </div>
+        </div>
+        <div class="film-card reveal scale-in rd4">
+          <div class="film-bg">
+            <img
+              src="./Images/f_8.jpg"
+              alt="Dil Bechara"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="film-bg-text">Dil Bechara</div>
+          </div>
+          <div class="film-year-badge">2020</div>
+          <div class="film-info">
+            <h3>Dil Bechara</h3>
+            <p>Mukesh Chhabra</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEGACY -->
+    <section id="legacy">
+      <div class="legacy-inner">
+        <div class="section-label reveal">Legacy</div>
+        <h2 class="reveal rd1">What He Left Behind</h2>
+        <p class="reveal rd2">
+          Sushant Singh Rajput was more than an actor. He was a scientist at
+          heart, a philosopher in spirit, and an artist in practice. His 150
+          dreams list — spanning learning Spanish to buying land on the moon —
+          showed us a man who refused to let the world shrink his imagination.
+        </p>
+        <p class="reveal rd3">
+          He inspired millions of young people from small towns across India to
+          believe that their origins did not determine their destinations. That
+          merit, passion, and relentless hard work could take anyone from Patna
+          to the top of Bollywood — and perhaps, one day, to the stars
+          themselves.
+        </p>
+        <p class="reveal rd4">
+          Though he left us far too soon, the warmth of his smile, the depth of
+          his eyes, and the power of his performances remain etched into the
+          soul of Indian cinema.
+        </p>
+        <div class="legacy-stats">
+          <div class="stat reveal rd2">
+            <span class="stat-num" data-target="26">0</span
+            ><span class="stat-label">Films &amp; Projects</span>
+          </div>
+          <div class="stat reveal rd3">
+            <span class="stat-num" data-target="34">0</span
+            ><span class="stat-label">Years of a Brilliant Life</span>
+          </div>
+          <div class="stat reveal rd4">
+            <span class="stat-num">&#x221e;</span
+            ><span class="stat-label">Hearts Touched</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section id="final">
+      <div class="stars-bg"></div>
+      <div class="final-inner">
+        <span class="memorial-star reveal">&#10022;</span>
+        <p class="final-quote reveal rd1">
+          "Some infinities are bigger than other infinities. You gave us a
+          forever within the numbered days."
+        </p>
+        <p class="final-dates reveal rd2">
+          21 January 1986 &nbsp;—&nbsp; 14 June 2020
+        </p>
+        <p class="final-name reveal rd3">Sushant Singh Rajput</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        A tribute made with <span>&#9829;</span> for a star we will never forget
+        &nbsp;&middot;&nbsp; Sushant Singh Rajput
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
