@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>To-Do List</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="brand">
+    <div class="brand-dot"><i class='bx bx-check-double'></i></div>
+    To-Do List
+  </div>
+  <div class="top-stats">
+    <div class="stat-pill"><i class='bx bx-list-ul'></i><b id="s-total">0</b> total</div>
+    <div class="stat-pill"><i class='bx bx-time-five'></i><b id="s-pending">0</b> pending</div>
+    <div class="stat-pill"><i class='bx bx-check-circle'></i><b id="s-done">0</b> done</div>
+  </div>
+</div>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="form-label"><i class='bx bx-plus-circle'></i> New Task</div>
+
+    <div class="field" id="fw-title">
+      <div class="field-lbl"><i class='bx bx-pencil'></i> Title</div>
+      <input type="text" id="inp-title" placeholder="What needs to be done?" maxlength="120"/>
+    </div>
+
+    <div class="field">
+      <div class="field-lbl"><i class='bx bx-align-left'></i> Description</div>
+      <textarea id="inp-desc" placeholder="Add details… (optional)"></textarea>
+    </div>
+
+    <div class="field">
+      <div class="field-lbl"><i class='bx bx-flag'></i> Priority</div>
+      <div class="prio-row">
+        <button class="pb a-low" data-p="low"  onclick="setPrio(this)"><i class='bx bx-minus'></i> Low</button>
+        <button class="pb"       data-p="med"  onclick="setPrio(this)"><i class='bx bx-flame'></i> Med</button>
+        <button class="pb"       data-p="high" onclick="setPrio(this)"><i class='bx bx-bolt-circle'></i> High</button>
+      </div>
+    </div>
+
+    <button class="btn-add" onclick="addTask()">
+      <i class='bx bx-plus'></i> Add Task
+    </button>
+  </aside>
+
+  <!-- Content -->
+  <main class="content">
+
+    <!-- Pending -->
+    <div class="section">
+      <div class="sec-head">
+        <i class='bx bx-time-five'></i>
+        <h2>Pending Tasks</h2>
+        <span class="sec-cnt" id="cnt-pending">0</span>
+      </div>
+      <div id="list-pending"></div>
+    </div>
+
+    <!-- Completed -->
+    <div class="section">
+      <div class="sec-head">
+        <i class='bx bx-check-circle'></i>
+        <h2>Completed Tasks</h2>
+        <span class="sec-cnt" id="cnt-done">0</span>
+      </div>
+      <div id="list-done"></div>
+    </div>
+
+  </main>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
